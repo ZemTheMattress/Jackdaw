@@ -1,0 +1,12 @@
+[Unit]
+Description=Jackdaw Dropbox sync module
+
+[Service]
+Type=simple
+Restart=always
+RestartSec=1
+User=thyago
+ExecStart = /home/thyago/.dropbox-dist/dropboxd.sh
+
+[Install]
+WantedBy=multi-user.target
